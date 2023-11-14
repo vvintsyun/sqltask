@@ -158,15 +158,15 @@ FactTo int
 );
  
 insert into @User(Id, LName, FName, Tel)
-values (1, 'Ivanov', 'Ivan', '+7(123)1231212'), (2, 'Ivanov', 'Vasily', null);
+values (1, ''Ivanov'', ''Ivan'', ''+7(123)1231212''), (2, ''Ivanov'', ''Vasily'', null);
  
 insert into @Territorys(Id, Name, ParentID)
-values (1, 'Moscow', null),
- 	   (2, 'Tver', 1),
- 	   (3, 'Vladimir',   1),
- 	   (4, 'Center', null),
- 	   (5, 'Perm', 4),
- 	   (6, 'Orel', 4);
+values (1, ''Moscow'', null),
+ 	   (2, ''Tver'', 1),
+ 	   (3, ''Vladimir'',   1),
+ 	   (4, ''Center'', null),
+ 	   (5, ''Perm'', 4),
+ 	   (6, ''Orel'', 4);
  
 insert into @Network(Id, Name)
 values (1, ''ABK''),
