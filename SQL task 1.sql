@@ -38,17 +38,16 @@ FactFrom int,
 FactTo int
 );
  
- 
 insert into @User(Id, LName, FName, Tel)
-values (1, 'Иванов', 'Иван', '+7(123)1231212'), (2, 'Иванов', 'Вася', null);
+values (1, 'Ivanov', 'Ivan', '+7(123)1231212'), (2, 'Ivanov', 'Vasily', null);
  
 insert into @Territorys(Id, Name, ParentID)
 values (1, 'Moscow', null),
- 	   (2, 'Москва', 1),
- 	   (3, 'Владимир',   1),
+ 	   (2, 'Tver', 1),
+ 	   (3, 'Vladimir',   1),
  	   (4, 'Center', null),
- 	   (5, 'Воронеж', 4),
- 	   (6, 'Орел', 4);
+ 	   (5, 'Perm', 4),
+ 	   (6, 'Orel', 4);
  
 insert into @Network(Id, Name)
 values (1, 'ABK'),
@@ -90,7 +89,7 @@ values (1, 1, 1, '01.04.2016', 60),
  (18, 2, 11, '01.04.2016', 65);
  
  
- insert into @Fact(PlanId, FactFrom, FactTo)
+insert into @Fact(PlanId, FactFrom, FactTo)
 values (1, 0, 23),
  (2, 500, 600),
  (3, 33, 44),
